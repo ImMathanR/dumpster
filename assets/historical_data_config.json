@@ -1,0 +1,26 @@
+[
+    {
+        "exchange": "NSE",
+        "symboltoken": "13048",
+        "name":"NIFTYBEES",
+        "interval": "ONE_DAY",
+        "fromdate": "2021-01-01 00:00", 
+        "todate": "2022-10-31 00:00"
+    },
+    {
+        "exchange": "NSE",
+        "symboltoken": "12646",
+        "name":"ONGC",
+        "interval": "ONE_DAY",
+        "fromdate": "2021-01-01 00:00", 
+        "todate": "2022-10-31 00:00"
+    },
+    {
+        "exchange": "NSE",
+        "symboltoken": "12273",
+        "name":"BOMDEYING",
+        "interval": "ONE_DAY",
+        "fromdate": "2021-01-01 00:00", 
+        "todate": "2022-10-31 00:00"
+    }
+]

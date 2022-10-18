@@ -4,18 +4,18 @@ from mimetypes import init
 from smartapi import SmartConnect
 from dotenv import load_dotenv
 import os
-from token_details import *
+import token_details
+import main
 
 def doLogin(totp): 
     #create object of call
-    load_dotenv()
-    apiKey = os.getenv("API_KEY")
+    
     username = os.getenv("USERNAME")
     password = os.getenv("PASSWORD")
 
-    obj=SmartConnect(api_key=apiKey)
+    token_details._obj = SmartConnect(api_key=main.apiKey)
 
-    data = obj.generateSession(username,password,totp)
+    data = token_details._obj.generateSession(username,password,totp)
     if len(data['errorcode']) != 0:
         error(data['message'])
         return "Login failed: " + data['message']
